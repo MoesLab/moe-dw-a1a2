@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Home page</title>
+<!-- TemplateEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Moe Azizi">
+<meta name="description" content="HTML and Adobe Dreamweaver">
+<meta name="keywords" content="HTML, CSS, Dreamweaver, Web development">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div class="container">
+<header id="page-header">
+  <h1>Introduction to Web Development</h1>
+  <h2>Dreamweaver Assignment</h2>
+</header>
+<aside class="sidebar">
+<nav id="main-nav">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../html-css.html">HTML and CSS</a></li>
+    <li><a href="../adobe-dw.html">Adobe Dreamweaver</a></li>
+    <li><a href="../modules.html">Our Modules</a></li>
+    <li><a href="../contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+</aside>
+<!-- TemplateBeginEditable name="main-section" -->
+<section class="content">
+  <!--place your main page contents here as explained in the instructions for each individual page-->
+  <h2>Welcome to HTML5</h2>
+</section>	
+	
+<!-- TemplateEndEditable -->
+<footer class="page-footer"> Copyright © 2021 Canadian Business College - DW assignment 1 and 2 - designed by: Mohammad ali azizollahlou - All rights reserved </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-size: 100%;
+}
+div.container {
+  max-width: 1400px; /* 960 was not good enough*/
+  background-color: #f9e6ff;
+  margin: auto;
+  color: #422899;
+  margin: auto;
+}
+div {
+  display: block;
+}
+header {
+  background: linear-gradient(#ff80ff, #600080);
+  text-shadow: 2px 2px #4d0066;
+  #f9e6ff;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  border: solid #4d0066;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+h1 {
+  font-size: 250%;
+  color: #f9e6ff;
+  margin: auto;
+}
+h2 {
+  font-size: 110%;
+  /*color:#D499D5;*/
+  margin: 5px;
+}
+p {
+  padding-bottom: 20px;
+}
+ul {
+  padding: 20px;
+}
+footer {
+  clear: both;
+  padding: 10px;
+  background: linear-gradient(#ff80ff, #600080);
+  text-shadow: 2px 2px #4d0066;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  border: solid #4d0066;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+.content {
+  padding: 15px;
+  width: 780px;
+  background-color: rgb(230, 248, 247);
+  float: left;
+}
+.sidebar {
+  padding: 15px;
+  width: 180px;
+  float: left;
+  background-color: #7FFFD4
+}
+#main-nav {
+  padding: 15px;
+  display: block;
+}
+#main-nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+#main-nav ul li {
+  /*border-bottom: 1px solid darkgreen;*/
+}
+#main-nav a:link, #main-nav a:visited {
+  text-decoration: none;
+  color: #D40D40;
+  display: block;
+	font-size: small;
+  border: solid 1px;
+  font-weight: bold;
+  padding: 3px;
+}
+#main-nav a:hover, #main-nav a:active {
+  background-color: #750099;
+  color: #FFFFFF;
+}
+img {
+  max-width: 100%;
+}
+.img-centre {
+  display: block;
+  margin: auto;
+}
+figure {
+  background-color: #e9e9d0;
+  border: 2px solid #36270F;
+  margin: 10px auto;
+  padding: 5px;
+}
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 90%;
+  color: rgb(23, 49, 1);
+}
+/* ****************** Starting the form styles *********************** */
+form {
+  background-color: #C76DDE;
+  width: 90%;
+  padding: 5px;
+  margin: auto;
+  border: 2px groove rgb(59, 80, 80);
+}
+form > label, form > input {
+  display: block;
+}
+form label {
+  background-color: #5F2261;
+  color: #E4E4E2;
+  width: 99%;
+  border: 2px solid #424141;
+  margin: 20px 0 5px 0;
+  border-radius: 6px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+form input, form textarea {
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 99%;
+}
+input[type="text"], input[type="email"], textarea {
+  width: 99%;
+}
+input:not([type="submit"]):not([type="reset"]), textarea {
+  width: 99%;
+}
+div.buttons input {
+  width: 100px;
+  margin: 5px;
+  color: #D40D40;
+  background-color: #7FFFD4;
+  font-weight: bold;
+}
+div.buttons {
+  background-color: #C76DDE;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+}
+div.buttons input:hover {
+  background-color: #750099;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/* *****************************************************  End of Global Styles *************** */
+@media only screen and (max-width: 500px) {
+  /* for testing */
+  header {
+    background-color: darkkhaki;
+    color: rgb(87, 83, 28);
+  }
+}
+@media only screen and (min-width:501px) and (max-width:900px) {
+  /* for testing */
+  header {
+    background-color: darkorange;
+  }
+  section.content {
+    width: 70%;
+    float: right;
+  }
+  aside.sidebar {
+    width: 30%;
+    float: left;
+  }
+}
+@media only screen and (min-width:901px) {
+  section.content {
+    width: 60%;
+    float: left;
+  }
+  aside.sidebar {
+    width: 20%;
+    float: left;
+  }
+}
+@media print {
+  header, section.content, aside.sidebar, footer {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+}
